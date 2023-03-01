@@ -151,7 +151,8 @@ const start = async function () {
   // const address = await createAddress(lnd);
   // console.log(`Your address is: ${address}`);
 
-  const data_psbt = await startPSBT(lnd);
+  // สร้าง PSBT
+  // const data_psbt = await startPSBT(lnd);
 
   // อันนี้กันจะเอาไว้เทสเปิด channel บน lnd ของอั๊มกำลังอยู่ในช่วงเทสอยู่
   // await openPendingChannel(lnd);
