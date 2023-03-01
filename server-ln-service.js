@@ -151,10 +151,10 @@ const start = async function () {
   // const address = await createAddress(lnd);
   // console.log(`Your address is: ${address}`);
 
-  // สร้าง PSBT
+  // สร้าง PSBT ถ้าสร้างแล้วครั้งต่อไปสร้างใหม่ไม่ได้เพราะเงินไม่พอ ต้องรอ psbt ที่สร้างไปก่อนหน้าหมดอายุ 10 นาที
   // const data_psbt = await startPSBT(lnd);
 
-  // อันนี้กันจะเอาไว้เทสเปิด channel บน lnd ของอั๊มกำลังอยู่ในช่วงเทสอยู่
+  // อันนี้กันจะเอาไว้เทสเปิด channel บน lnd ของอั๊มกำลังอยู่ในช่วงเทสอยู่ สร้างถี่ๆ ไม่ได้เหมือนกัน ต้องรอ 10 นาทีถึงจะสร้างใหม่ได้
   // await openPendingChannel(lnd);
 };
 
